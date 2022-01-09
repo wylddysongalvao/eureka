@@ -40,7 +40,7 @@ export const Icon = styled.img.attrs({
 
 export const Input = styled.input.attrs({
     type: 'text',
-    placeholder: 'Pesquisar o CEP',
+    placeholder: 'Insira um CEP',
 
     })`
     width: 70%;
@@ -94,4 +94,5 @@ export const Text = styled.p`
     padding: 0;
     font-size: 14px;
     width: max-content;
+    color:#fff;
 `;

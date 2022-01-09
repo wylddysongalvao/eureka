@@ -2,7 +2,10 @@ import React from  'react';
 import CityImg from '../../assets/city.png';
 import MarkerImg from '../../assets/marker.png';
 import FlagImg from '../../assets/flag.png';
-
+import PeoplesImg from '../../assets/peoples.png';
+import PhoneImg from '../../assets/phone.png';
+import DeleteImg from '../../assets/erase.png';
+import api from '.././../services/api';
 import {
     ContainerData,
     Address,
@@ -14,15 +17,33 @@ import {
     Box,
     TextBox,
     TextBold,
-    BoxAddress
+    BoxAddress,
+    IconDelete
 } from  './styles';
 
-function AddressPage({data}) {
+function AddressPage({data, Delete, Id}) {
+
+    const Erase = async() => {
+        await api.delete(`/cep/${Id}`).then(() => {
+            Delete();
+        }).catch((err) => {
+            console.log(err);
+        });
+    }
+
+    const Confirm = () => {
+        console.log(Id);
+        if(window.confirm('Deseja realmente excluir este endereço?')) {
+            Erase();
+        }
+    }
+
     return(
         <ContainerData>
         <BoxAddress>
             <TitleAddress>{data.cep}</TitleAddress>
-        </BoxAddress>
+            {Delete ? <IconDelete onClick={Confirm} src={DeleteImg} /> : null}
+        </BoxAddress> 
         <Address>
 
             <AddressList>
@@ -50,10 +71,12 @@ function AddressPage({data}) {
         </BoxAddress>
         <Box>
             <TextBox>
-                <TextBold>Ibge:</TextBold> {data.ibge}
+                <IconAddress src={PeoplesImg} />
+                <TextBold>Ibge: </TextBold>  {data.ibge}
             </TextBox>
             <TextBox>
-                <TextBold>ddd:</TextBold> {data.ddd}
+                <IconAddress src={PhoneImg} />
+                <TextBold>ddd: </TextBold>  {data.ddd}
             </TextBox>
         </Box>
     </ContainerData>

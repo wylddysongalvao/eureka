@@ -61,7 +61,7 @@ export const BoxAddress = styled.div`
     width: 77%;
     height: auto;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
 
@@ -117,6 +117,10 @@ export const Text = styled.p`
 `;
 
 export const TextBox = styled.p`
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -126,9 +130,19 @@ export const TextBox = styled.p`
 export const TextBold = styled.b`
     margin: 0;
     font-size: 14px;
+    margin-left: 8px;
 `;
 
 export const InfoExtra = styled.div`
 
     background-color: #141c2f;
+`
+
+export const IconDelete = styled.img.attrs({
+    alt: 'ícone de deletar'
+})`
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
 `

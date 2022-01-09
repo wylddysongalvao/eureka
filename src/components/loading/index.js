@@ -1,5 +1,5 @@
 import React from 'react';
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import { Player } from '@lottiefiles/react-lottie-player';
 import LoadingLottie from '../../assets/loading.json';
 function Loading(){
     return(
