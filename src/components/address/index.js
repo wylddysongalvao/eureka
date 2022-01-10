@@ -21,11 +21,11 @@ import {
     IconDelete
 } from  './styles';
 
-function AddressPage({data, Delete, Id}) {
+function AddressPage({data, Delete, Id, Update}) {
 
     const Erase = async() => {
         await api.delete(`/cep/${Id}`).then(() => {
-            Delete();
+            Update();
         }).catch((err) => {
             console.log(err);
         });
