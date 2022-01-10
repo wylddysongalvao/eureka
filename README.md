@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/32370873/148723091-7533f38b-502b-4cde-86e2-3be71800870c.png">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Captura de tela 2022-01-09 182044](https://user-images.githubusercontent.com/32370873/148721790-6605f5c6-8ceb-4bd9-9579-e2a8a73c9ebf.png)
+![Captura de tela 2022-01-09 182552](https://user-images.githubusercontent.com/32370873/148721794-b58d84ff-7147-4052-b7e8-10a98ce25af6.png)
+![Group 33](https://user-images.githubusercontent.com/32370873/148723303-1167512d-1832-409f-8844-f83d5c739a38.png)
 
-## Available Scripts
+## Introdução
 
-In the project directory, you can run:
+Eureka consulta cep é um aplicativo para consultar endereços através do cep informado. Você pode testa a demo clicando aqui [Eureka consulta CEP](https://eurekaconsultacep.herokuapp.com/). Está é uma aplicação que utiliza a API desenvolvida para este projeto. A API desenvolvida tem integração com a api da [ViaCep](https://viacep.com.br/), caso o cep nunca tenha cido utilizado a API irá realizar a consulta no ViaCep e irá armazenar as informações no banco de dados MongoDB.
 
-### `npm start`
+##
+Instalação
+```bash
+git clone git@github.com:wylddysongalvao/eureka.git
+cd eureka
+npm i
+```
+Rodando localmente
+```bash
+npm run start
+```
+Logo após acesse [http://localhost:3000](http://localhost:3000) para ver em seu navegador.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Criando a build para deploy
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run build
+```
