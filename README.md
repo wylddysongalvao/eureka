@@ -10,7 +10,11 @@
 
 Eureka consulta cep é um aplicativo para consultar endereços através do cep informado. Você pode testa a demo clicando aqui [Eureka consulta CEP](https://eurekaconsultacep.herokuapp.com/). Está é uma aplicação que utiliza a API desenvolvida para este projeto. A API desenvolvida tem integração com a api da [ViaCep](https://viacep.com.br/), caso o cep nunca tenha cido utilizado a API irá realizar a consulta no ViaCep e irá armazenar as informações no banco de dados MongoDB.
 
-##
+## Techs
+React
+Styled-components
+axios
+
 Instalação
 ```bash
 git clone git@github.com:wylddysongalvao/eureka.git
